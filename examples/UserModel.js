@@ -29,7 +29,7 @@ var validators = {
       validator: function(username) {
         return ( username.length <= 16 );
       },
-      msg: 'LengthBelowMin'
+      msg: 'LengthAboveMax'
     }
   ]
 };
