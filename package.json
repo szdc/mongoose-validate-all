@@ -1,0 +1,10 @@
+{
+  "name": "mongoose-validate-all",
+  "version": "0.0.1",
+  "private": "true",
+  "devDependencies": {
+    "mongoose": "3.8.x",
+    "mocha": ">=1.11.0",
+    "should": ">=1.2.2"
+  }
+}
