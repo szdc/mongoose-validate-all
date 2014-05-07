@@ -1,4 +1,10 @@
-mongoose-validate-all
+Mongoose, run all my validators!
 =====================
 
-Enables you to have all your validator functions executed and evaluated, rather than having mongoose terminate at the first error.
+Allows you to have all your validator functions executed and evaluated, rather than having Mongoose terminate at the first error.
+
+
+Roadmap
+-------
+* Custom delimiter
+* More documentation + example
