@@ -1,6 +1,7 @@
 {
   "name": "mongoose-validate-all",
   "version": "0.0.1",
+  "main": "../lib/mongoose-validate-all.js",
   "private": "true",
   "devDependencies": {
     "mongoose": "3.8.x",

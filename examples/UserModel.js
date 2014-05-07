@@ -10,7 +10,10 @@ module.exports = function(db) {
 // Schema
 function UserSchema() {
   var User = new Schema({
-    username: { type: String, validate: new ValidationGroup(validators.username) }
+    username: { 
+      type: String, 
+      validate: new ValidationGroup(validators.username) 
+    }
   });
 
   return User;
