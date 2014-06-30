@@ -1,8 +1,8 @@
 {
   "name": "mongoose-validate-all",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "author": "szdc (http://github.com/szdc)",
   "main": "lib/mongoose-validate-all.js",
-  "private": "true",
   "devDependencies": {
     "mongoose": "3.8.x",
     "mocha": ">=1.11.0",
