@@ -22,19 +22,20 @@ describe('validate-all', function() {
     });
   });
 
-  it('should return a delimited list of errors in the message field when multiple errors exist', function(done) {
+  it('should return a JSON-encoded array of errors in the message field when multiple errors exist', function(done) {
     user.username = 'InvalidCharacter*TooLong';
     user.validate(function(err) {
-      err.errors.username.message.should.containEql('LengthAboveMax') &&
-        err.errors.username.message.should.containEql('InvalidCharacters');
+      var usernameErrors = JSON.parse(err.errors.username.message);
+      usernameErrors.should.containEql('LengthAboveMax').and.containEql('InvalidCharacters');
       done();
     });
   });
   
-  it('should return a single error when one error exists', function(done) {
+  it('should return a JSON-encoded array with a single error when only one error exists', function(done) {
     user.username = 'validCharactersTooLong';
     user.validate(function(err) {
-      err.errors.username.message.should.eql('LengthAboveMax');
+      var usernameErrors = JSON.parse(err.errors.username.message);
+      usernameErrors.should.containEql('LengthAboveMax').and.have.length(1);
       done();
     });
   });
