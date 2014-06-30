@@ -18,6 +18,8 @@ In-built validators (such as *min* and *max*) are **not run**  are not run by th
 
 Usage
 -------
+Check out the [example model](examples/UserModel.js) and [tests](/test/validate-all.js).
+
 ### Importing the module
     var ValidationGroup = require('mongoose-validate-all');
     
