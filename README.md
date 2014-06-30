@@ -8,7 +8,7 @@ MongooseValidateAll (MVA) does a full sweep and runs all your custom validation 
 
 Installation
 ------------
-Will add to npm soon.  In the meantime feel free to fork the repository.
+    npm install mongoose-validate-all
 
 
 Limitations
