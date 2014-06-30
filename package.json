@@ -2,6 +2,12 @@
   "name": "mongoose-validate-all",
   "version": "0.1.0",
   "author": "szdc (http://github.com/szdc)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/szdc/mongoose-validate-all.git"
+  },
+  "bugs": "https://github.com/szdc/mongoose-validate-all/issues"
   "main": "lib/mongoose-validate-all.js",
   "devDependencies": {
     "mongoose": "3.8.x",
