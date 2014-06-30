@@ -44,3 +44,8 @@ Set the validate property of the Schema to an instance of the module, passing in
           validate: new ValidationGroup(fieldValidators) 
         }
     });
+
+### Interpreting output
+All errors are accessed through the **message** property.
+* If there were no errors, the error object returned by Mongoose will not exist (and hence there will be no message property)
+* If there was an error, the message property will be a JSON-encoded array of error messages; use `JSON.parse` to reconstruct the array
