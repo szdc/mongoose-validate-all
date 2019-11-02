@@ -10,7 +10,7 @@
   "bugs": "https://github.com/szdc/mongoose-validate-all/issues",
   "main": "lib/mongoose-validate-all.js",
   "devDependencies": {
-    "mongoose": "3.8.x",
+    "mongoose": "5.7.x",
     "mocha": ">=1.11.0",
     "should": ">=1.2.2"
   }
